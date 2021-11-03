@@ -1,0 +1,83 @@
+<!DOCTYPE FilterScript>
+<FilterScript>
+ <filter name="Select small disconnected component">
+  <Param name="NbFaceRatio" tooltip="This ratio (between 0 and 1) defines the meaning of &lt;i>small&lt;/i> as the threshold ratio between the number of facesof the largest component and the other ones. A larger value will select more components." type="RichFloat" value="0.1" isxmlparam="0" description="Small component ratio"/>
+  <Param name="NonClosedOnly" tooltip="" type="RichBool" value="false" isxmlparam="0" description="Select only non closed components"/>
+ </filter>
+ <filter name="Delete Selected Faces"/>
+ <filter name="Select None">
+  <Param name="allFaces" isxmlparam="0" value="true" tooltip="If true the filter will de-select all the faces." type="RichBool" description="De-select all Faces"/>
+  <Param name="allVerts" isxmlparam="0" value="true" tooltip="If true the filter will de-select all the vertices." type="RichBool" description="De-select all Vertices"/>
+ </filter>
+ <filter name="Repair non Manifold Edges by removing faces"/>
+ <filter name="Close Holes">
+  <Param name="MaxHoleSize" isxmlparam="0" value="2000" tooltip="The size is expressed as number of edges composing the hole boundary" type="RichInt" description="Max size to be closed "/>
+  <Param name="Selected" isxmlparam="0" value="false" tooltip="Only the holes with at least one of the boundary faces selected are closed" type="RichBool" description="Close holes with selected faces"/>
+  <Param name="NewFaceSelected" isxmlparam="0" value="true" tooltip="After closing a hole the faces that have been created are left selected. Any previous selection is lost. Useful for example for smoothing the newly created holes." type="RichBool" description="Select the newly created faces"/>
+  <Param name="SelfIntersection" isxmlparam="0" value="true" tooltip="When closing an holes it tries to prevent the creation of faces that intersect faces adjacent to the boundary of the hole. It is an heuristic, non intersetcting hole filling can be NP-complete." type="RichBool" description="Prevent creation of selfIntersecting faces"/>
+ </filter>
+ <filter name="Select Self Intersecting Faces"/>
+ <filter name="Delete Selected Faces"/>
+ <filter name="Select None">
+  <Param name="allFaces" isxmlparam="0" value="true" tooltip="If true the filter will de-select all the faces." type="RichBool" description="De-select all Faces"/>
+  <Param name="allVerts" isxmlparam="0" value="true" tooltip="If true the filter will de-select all the vertices." type="RichBool" description="De-select all Vertices"/>
+ </filter>
+ <filter name="Repair non Manifold Edges by removing faces"/>
+ <filter name="Close Holes">
+  <Param name="MaxHoleSize" isxmlparam="0" value="2000" tooltip="The size is expressed as number of edges composing the hole boundary" type="RichInt" description="Max size to be closed "/>
+  <Param name="Selected" isxmlparam="0" value="false" tooltip="Only the holes with at least one of the boundary faces selected are closed" type="RichBool" description="Close holes with selected faces"/>
+  <Param name="NewFaceSelected" isxmlparam="0" value="true" tooltip="After closing a hole the faces that have been created are left selected. Any previous selection is lost. Useful for example for smoothing the newly created holes." type="RichBool" description="Select the newly created faces"/>
+  <Param name="SelfIntersection" isxmlparam="0" value="true" tooltip="When closing an holes it tries to prevent the creation of faces that intersect faces adjacent to the boundary of the hole. It is an heuristic, non intersetcting hole filling can be NP-complete." type="RichBool" description="Prevent creation of selfIntersecting faces"/>
+ </filter>
+ <filter name="Select Self Intersecting Faces"/>
+ <filter name="Delete Selected Faces"/>
+ <filter name="Select None">
+  <Param name="allFaces" isxmlparam="0" value="true" tooltip="If true the filter will de-select all the faces." type="RichBool" description="De-select all Faces"/>
+  <Param name="allVerts" isxmlparam="0" value="true" tooltip="If true the filter will de-select all the vertices." type="RichBool" description="De-select all Vertices"/>
+ </filter>
+ <filter name="Repair non Manifold Edges by removing faces"/>
+ <filter name="Close Holes">
+  <Param name="MaxHoleSize" isxmlparam="0" value="2000" tooltip="The size is expressed as number of edges composing the hole boundary" type="RichInt" description="Max size to be closed "/>
+  <Param name="Selected" isxmlparam="0" value="false" tooltip="Only the holes with at least one of the boundary faces selected are closed" type="RichBool" description="Close holes with selected faces"/>
+  <Param name="NewFaceSelected" isxmlparam="0" value="true" tooltip="After closing a hole the faces that have been created are left selected. Any previous selection is lost. Useful for example for smoothing the newly created holes." type="RichBool" description="Select the newly created faces"/>
+  <Param name="SelfIntersection" isxmlparam="0" value="true" tooltip="When closing an holes it tries to prevent the creation of faces that intersect faces adjacent to the boundary of the hole. It is an heuristic, non intersetcting hole filling can be NP-complete." type="RichBool" description="Prevent creation of selfIntersecting faces"/>
+ </filter>
+ <filter name="Select Self Intersecting Faces"/>
+ <filter name="Delete Selected Faces"/>
+ <filter name="Select None">
+  <Param name="allFaces" isxmlparam="0" value="true" tooltip="If true the filter will de-select all the faces." type="RichBool" description="De-select all Faces"/>
+  <Param name="allVerts" isxmlparam="0" value="true" tooltip="If true the filter will de-select all the vertices." type="RichBool" description="De-select all Vertices"/>
+ </filter>
+ <filter name="Select Border"/>
+ <filter name="Delete Selected Faces"/>
+ <filter name="Select None">
+  <Param name="allFaces" isxmlparam="0" value="true" tooltip="If true the filter will de-select all the faces." type="RichBool" description="De-select all Faces"/>
+  <Param name="allVerts" isxmlparam="0" value="true" tooltip="If true the filter will de-select all the vertices." type="RichBool" description="De-select all Vertices"/>
+ </filter>
+ <filter name="Repair non Manifold Edges by removing faces"/>
+ <filter name="Close Holes">
+  <Param name="MaxHoleSize" isxmlparam="0" value="2000" tooltip="The size is expressed as number of edges composing the hole boundary" type="RichInt" description="Max size to be closed "/>
+  <Param name="Selected" isxmlparam="0" value="false" tooltip="Only the holes with at least one of the boundary faces selected are closed" type="RichBool" description="Close holes with selected faces"/>
+  <Param name="NewFaceSelected" isxmlparam="0" value="true" tooltip="After closing a hole the faces that have been created are left selected. Any previous selection is lost. Useful for example for smoothing the newly created holes." type="RichBool" description="Select the newly created faces"/>
+  <Param name="SelfIntersection" isxmlparam="0" value="true" tooltip="When closing an holes it tries to prevent the creation of faces that intersect faces adjacent to the boundary of the hole. It is an heuristic, non intersetcting hole filling can be NP-complete." type="RichBool" description="Prevent creation of selfIntersecting faces"/>
+ </filter>
+ <filter name="Select Border"/>
+ <filter name="Delete Selected Faces"/>
+ <filter name="Select None">
+  <Param name="allFaces" isxmlparam="0" value="true" tooltip="If true the filter will de-select all the faces." type="RichBool" description="De-select all Faces"/>
+  <Param name="allVerts" isxmlparam="0" value="true" tooltip="If true the filter will de-select all the vertices." type="RichBool" description="De-select all Vertices"/>
+ </filter>
+ <filter name="Repair non Manifold Edges by removing faces"/>
+ <filter name="Close Holes">
+  <Param name="MaxHoleSize" isxmlparam="0" value="2000" tooltip="The size is expressed as number of edges composing the hole boundary" type="RichInt" description="Max size to be closed "/>
+  <Param name="Selected" isxmlparam="0" value="false" tooltip="Only the holes with at least one of the boundary faces selected are closed" type="RichBool" description="Close holes with selected faces"/>
+  <Param name="NewFaceSelected" isxmlparam="0" value="true" tooltip="After closing a hole the faces that have been created are left selected. Any previous selection is lost. Useful for example for smoothing the newly created holes." type="RichBool" description="Select the newly created faces"/>
+  <Param name="SelfIntersection" isxmlparam="0" value="true" tooltip="When closing an holes it tries to prevent the creation of faces that intersect faces adjacent to the boundary of the hole. It is an heuristic, non intersetcting hole filling can be NP-complete." type="RichBool" description="Prevent creation of selfIntersecting faces"/>
+ </filter>
+ <filter name="Laplacian Smooth">
+  <Param type="RichInt" description="Smoothing steps" isxmlparam="0" tooltip="The number of times that the whole algorithm (normal smoothing + vertex fitting) is iterated." name="stepSmoothNum" value="3"/>
+  <Param type="RichBool" description="1D Boundary Smoothing" isxmlparam="0" tooltip="Smooth boundary edges only by themselves (e.g. the polyline forming the boundary of the mesh is independently smoothed). This can reduce the shrinking on the border but can have strange effects on very small boundaries." name="Boundary" value="true"/>
+  <Param type="RichBool" description="Cotangent weighting" isxmlparam="0" tooltip="Use cotangent weighting scheme for the averaging of the position. Otherwise the simpler umbrella scheme (1 if the edge is present) is used." name="cotangentWeight" value="true"/>
+  <Param type="RichBool" description="Affect only selection" isxmlparam="0" tooltip="If checked the filter is performed only on the selected area" name="Selected" value="true"/>
+ </filter> 
+</FilterScript>
